@@ -15,10 +15,17 @@
 
 
 
- .container {
-  background: url("https://unsplash.imgix.net/25/delicate.jpg?q=75&fm=jpg&s=222ced745d58ea74b747151b781253fb") no-repeat center center fixed;
-  background-size: cover;
+body, a, p{
+  font-weight: 100;
 }
+
+fieldset {
+  background-color: rgba(255,255,255,.3);
+  color: white;
+  border: none !important;
+}
+
+
 
 .navbar .nav > li > a.brand {
   padding-left: 0px;

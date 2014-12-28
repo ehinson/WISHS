@@ -6,16 +6,17 @@ html, body {
   background: url("https://unsplash.imgix.net/25/delicate.jpg?q=75&fm=jpg&s=222ced745d58ea74b747151b781253fb") no-repeat center center fixed;
   background-size: cover;
 }
-.container {
-  height: 100%;
-  width: 100%;
-  background: url("https://unsplash.imgix.net/25/delicate.jpg?q=75&fm=jpg&s=222ced745d58ea74b747151b781253fb") no-repeat center center fixed;
-  background-size: cover;
-}
-.row {
-  height:100%;
+.container{
+  border:none;
 }
 
+.row {
+  height:100%;
+  border:none;
+}
+.small-centered {
+  margin-top: 33%;
+}
 
 h1.cursive {
   font-family: 'Homemade Apple', cursive;
@@ -23,4 +24,25 @@ h1.cursive {
 
 p {
   font-family: Helvetica, Arial, sans-serif; 
+}
+
+button, .button, button:hover {
+  background: none;
+  border: 2px white solid;
+}
+
+button:hover, button:focus, .button:hover, .button:focus{
+  color: white;
+}
+
+.button:focus {
+  background-color: rgba(255,255,255,.3);
+}
+
+a.button {
+  color:white !important;
+}
+
+a.button:hover {
+  background: rgba(255,255,255,.5);
 }
