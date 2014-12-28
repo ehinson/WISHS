@@ -16,11 +16,19 @@
 
 
  .container {
-  margin-left: 135px
+  background: url("https://unsplash.imgix.net/25/delicate.jpg?q=75&fm=jpg&s=222ced745d58ea74b747151b781253fb") no-repeat center center fixed;
+  background-size: cover;
 }
 
 .navbar .nav > li > a.brand {
   padding-left: 0px;
+}
+
+.black {
+  color: black;
+}
+.white {
+  color: white;
 }
 
 .quiet {

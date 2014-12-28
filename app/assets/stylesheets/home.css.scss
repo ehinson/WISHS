@@ -1,3 +1,26 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+html, body {
+  background: url("https://unsplash.imgix.net/25/delicate.jpg?q=75&fm=jpg&s=222ced745d58ea74b747151b781253fb") no-repeat center center fixed;
+  background-size: cover;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  background: url("https://unsplash.imgix.net/25/delicate.jpg?q=75&fm=jpg&s=222ced745d58ea74b747151b781253fb") no-repeat center center fixed;
+  background-size: cover;
+}
+.row {
+  height:100%;
+}
+
+
+h1.cursive {
+  font-family: 'Homemade Apple', cursive;
+}
+
+p {
+  font-family: Helvetica, Arial, sans-serif; 
+}
