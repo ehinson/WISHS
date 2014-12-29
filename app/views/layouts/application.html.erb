@@ -14,7 +14,7 @@
   	<!-- Set the viewport width to device width for mobile -->
   	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  	<title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
+  	<title><%= content_for?(:title) ? yield(:title) : "What I Should Have Said | A Mini-journaling App" %></title>
     <link href='http://fonts.googleapis.com/css?family=Homemade+Apple' rel='stylesheet' type='text/css'>
   	<%= stylesheet_link_tag    "application" %>
   	<%= javascript_include_tag "vendor/custom.modernizr" %>
@@ -22,9 +22,13 @@
   </head>
 
   <body>
+    <div class = "header">
+    </div>
+    <div class= "container">
+      <%= yield %>
+    </div>
 
-
-    <%= yield %>
+    
 
     
     <%= javascript_include_tag "application" %>

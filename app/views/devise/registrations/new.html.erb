@@ -1,30 +1,35 @@
 
-<div class = "row">
-  <fieldset>
-    <h1 class="cursive white">sign up</h1>
+<div class = "row clearfix">
+  <fieldset class="small-6 columns text-center ">
+    <h1 class="cursive">sign up</h1>
 
   <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
-  <div class="field">
-    <%= f.label :email %><br />
+  <div class="small-12 columns left clearfix">
+    <%= f.label :email %>
     <%= f.email_field :email, autofocus: true %>
   </div>
 
-  <div class="field small-6 columns text-center">
+  <div class="small-12 columns left clearfix">
+    <%= f.label :username %>
+    <%= f.email_field :username%>
+  </div>
+
+  <div class="small-12 columns left">
     <%= f.label :password %>
     <% if @validatable %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
+    <% end %>
     <%= f.password_field :password, autocomplete: "off"%>
   </div>
 
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
+  <div class="small-12 columns left">
+    <%= f.label :password_confirmation %>
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
 
-  <div class="actions">
+  <div class="actions left">
     <%= f.submit "Sign up" %>
   </div>
 <% end %>

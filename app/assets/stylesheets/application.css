@@ -19,18 +19,16 @@ body, a, p{
   font-weight: 100;
 }
 
+.container {
+  margin: 20px;
+}
+
 fieldset {
   background-color: rgba(255,255,255,.3);
-  color: white;
-  border: none !important;
 }
 
 
-
-.navbar .nav > li > a.brand {
-  padding-left: 0px;
-}
-
+/*colors*/
 .black {
   color: black;
 }
@@ -55,5 +53,4 @@ div.nav_item {
 }
 
 div.comment_votes {
-  padding: 10px;
 }
