@@ -1,39 +1,33 @@
 
-<div class = "row clearfix">
-  <fieldset class="small-6 columns text-center ">
+<div class = "row clearfix text-center">
+  <fieldset class="small-6 columns text-center center">
     <h1 class="cursive">sign up</h1>
 
   <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
   <div class="small-12 columns left clearfix">
-    <%= f.label :email %>
-    <%= f.email_field :email, autofocus: true %>
+    <%= f.email_field :email, autofocus: true , :placeholder => "email"%>
   </div>
 
   <div class="small-12 columns left clearfix">
-    <%= f.label :username %>
-    <%= f.email_field :username%>
+    <%= f.text_field :username, :placeholder => "username"%>
   </div>
 
   <div class="small-12 columns left">
-    <%= f.label :password %>
-    <% if @validatable %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %>
-    <%= f.password_field :password, autocomplete: "off"%>
+    <%= f.password_field :password, autocomplete: "off", :placeholder => "password (#{@minimum_password_length} characters minimum)"%>
   </div>
 
   <div class="small-12 columns left">
-    <%= f.label :password_confirmation %>
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
+    <%= f.password_field :password_confirmation, autocomplete: "off", :placeholder => "password confirmation" %>
   </div>
 
-  <div class="actions left">
-    <%= f.submit "Sign up" %>
+  <div class="actions text-center">
+    <%= f.submit %> | <%= render "devise/shared/links" %>
   </div>
 <% end %>
+
 </fieldset>
 
-<%= render "devise/shared/links" %>
+
 </div>
