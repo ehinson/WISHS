@@ -16,7 +16,15 @@
     <%= f.text_field :title %>
   </div>
   <div class="field">
-    <%= f.label :description %><br>
+    <%= f.label :what_happened? %><br>
+    <%= f.text_area :setting, rows:10 %>
+  </div>
+   <div class="field">
+    <%= f.label :what_did_I_say_or_do? %><br>
+    <%= f.text_area :reaction %>
+  </div>
+    <div class="field">
+    <%= f.label :what_I_should_have_said %><br>
     <%= f.text_area :description %>
   </div>
   <div class="field">

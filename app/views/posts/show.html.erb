@@ -4,13 +4,27 @@
 
 <p><%= render 'shared/content_title', title: @post.title  %></p>
 
-<p>
+<p>What Happened:<br>
+  <%= @post.setting  %>
+</p>
+<p>What I Said/Did: <br>
+  <%= @post.reaction  %>
+</p>
+<p>What I Should Have Said:<br>
   <%= @post.description  %>
 </p>
 
 <hr/>
 
-<p><%= @post.user.username %></p>
+<p><small>posted by</small> <%= @post.user.username %></p>
+
+<p>Comments:<br>
+
+<%= @comments.each do |comment|  %>
+<%= comment.body %>
+<hr>
+</p>
+<%  end  %>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
 <%= link_to 'Back', posts_path %>

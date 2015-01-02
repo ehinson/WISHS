@@ -1,0 +1,28 @@
+Delete comments belonging to a deleted post:
+  has_many :comments, dependent: :destroy
+
+Login/Signup:
+  create a username/display name
+  also user email
+
+  only able to create posts after signin
+  only able to see/make comments
+  only able to see full posts
+
+Dropdown list of categories
+
+Add friends or follow users
+
+User Dashboard:
+  browse categories
+  create posts
+
+User Profile
+  all comments
+  all categories
+  friends
+  all votes
+
+Navigation:
+  user comments: all comments from a user
+  

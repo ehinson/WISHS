@@ -36,6 +36,8 @@ GEM
     coffee-script-source (1.8.0)
     erubis (2.7.0)
     execjs (2.2.2)
+    faker (1.4.3)
+      i18n (~> 0.5)
     foundation-rails (5.5.0.0)
       railties (>= 3.1.0)
       sass (>= 3.2.0, < 3.4)
@@ -288,6 +290,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
+  faker (~> 1.4.3)
   foundation-rails
   jbuilder (~> 1.2)
   jquery-rails

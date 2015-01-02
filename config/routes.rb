@@ -1,5 +1,7 @@
 MiniJournal::Application.routes.draw do
 
+  resources :users
+
   resources :comments
 
   resources :post_categories
@@ -8,7 +10,9 @@ MiniJournal::Application.routes.draw do
 
   resources :posts
 
+
   get "home/index"
+  get "home/dashboard"
 
   root to: "home#index"
   # The priority is based upon order of creation: first created -> highest priority.
