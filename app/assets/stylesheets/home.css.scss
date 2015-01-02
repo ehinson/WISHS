@@ -5,6 +5,7 @@
 html, body {
   background: url() no-repeat center center fixed;
   background-size: cover;
+  color:black;
 }
 .container{
   border:none;
@@ -28,11 +29,10 @@ p {
 
 button, .button, button:hover {
   background: none;
-  border: 2px white solid;
 }
 
 button:hover, button:focus, .button:hover, .button:focus{
-  color: white;
+
 }
 
 .button:focus {
@@ -40,7 +40,7 @@ button:hover, button:focus, .button:hover, .button:focus{
 }
 
 a.button {
-  color:white !important;
+  
 }
 
 a.button:hover {
