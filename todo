@@ -26,3 +26,15 @@ User Profile
 Navigation:
   user comments: all comments from a user
   
+Show only comments belonging to a prticular post.
+Show comments belonging to a particuular ctegory
+
+Word cloud: comment advice?
+
+Add tags to posts? 
+
+Vote on comments
+
+Button Context
+
+<%= f.submit(@post.new_record? ? 'Create Post' : 'Update Post', class: 'btn btn-primary')  %>

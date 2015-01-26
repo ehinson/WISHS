@@ -1,18 +1,25 @@
 MiniJournal::Application.routes.draw do
-
-  resources :users
-
-  resources :comments
-
-  resources :post_categories
-
-  resources :categories
-
-  resources :posts
-
+  
 
   get "home/index"
   get "home/dashboard"
+  get '/register', to: 'users#new'
+  get '/login', to: 'sessions#new'
+  post '/login', to: 'sessions#create'
+  get '/logout', to: 'sessions#destroy'
+  
+  resources :sessions
+
+  resources :users, except: [:destroy]
+
+  resources :categories, only: [:new, :create, :show]
+
+  resources :posts do
+
+    resources :comments
+
+  end
+
 
   root to: "home#index"
   # The priority is based upon order of creation: first created -> highest priority.
